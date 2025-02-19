@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "first_name": "Jessica",
+        "last_name": "Lewis",
+        "email": "melissa53@graham-smith.com",
+        "gender": "Female",
+        "department": "Training",
+        "avatar": "https://robohash.org/wrong.png"
+    },
+    {
+        "id": 2,
+        "first_name": "Brian",
+        "last_name": "Miller",
+        "email": "roger75@gmail.com",
+        "gender": "Male",
+        "department": "Services",
+        "avatar": "https://robohash.org/wind.png"
+    },
+    {
+        "id": 3,
+        "first_name": "Shaun",
+        "last_name": "Gillespie",
+        "email": "njones@downs-houston.com",
+        "gender": "Male",
+        "department": "IT",
+        "avatar": "https://robohash.org/and.png"
+    },
+    {
+        "id": 4,
+        "first_name": "Dwayne",
+        "last_name": "Mack",
+        "email": "morgansummers@johnston.info",
+        "gender": "Female",
+        "department": "Training",
+        "avatar": "https://robohash.org/billion.png"
+    },
+    {
+        "id": 5,
+        "first_name": "Richard",
+        "last_name": "Cross",
+        "email": "hmarsh@white.biz",
+        "gender": "Male",
+        "department": "Services",
+        "avatar": "https://robohash.org/get.png"
+    },
+    {
+        "id": 6,
+        "first_name": "Kenneth",
+        "last_name": "Shea",
+        "email": "phyllis47@johnson-richardson.biz",
+        "gender": "Male",
+        "department": "Business Development",
+        "avatar": "https://robohash.org/popular.png"
+    }
+]
