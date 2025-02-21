@@ -9,7 +9,7 @@ import Foundation
 
 @Observable
 final class GestionViewModel {
-    let employeesLogic: EmployeesLogic
+    var employeesLogic: EmployeesLogic
     
     init(employeesLogic: EmployeesLogic = .shared) {
         self.employeesLogic = employeesLogic

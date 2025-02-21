@@ -20,3 +20,7 @@ struct PersistencePreview: PersistenceInteractor {
 extension GestionViewModel {
     static let preview =  GestionViewModel(employeesLogic: EmployeesLogic(persistence: PersistencePreview()))
 }
+
+extension Employee {
+    static let test = Employee(id: 1, firstName: "danilo", lastName: "osori", email: "dani@gamil.com", gender: .male, department: .businessDevelopment, avatar: URL(string: "https://robohash.org/and.png")!)
+}

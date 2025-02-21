@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct EmpleadosMCApp: App {
+    @State var vm = GestionViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(vm)
         }
     }
 }

@@ -8,15 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var vm = GestionViewModel()
+    @Environment(GestionViewModel.self) var vm
     
     var body: some View {
-        List(vm.employeesLogic.employees){employee in
-            Text(employee.firstName)
+        @Bindable var binding = vm
+        NavigationStack {
+            List(vm.employeesLogic.employees){employee in
+                NavigationLink(value: employee, label: {EmployeesCell(employee: employee)})
+            }
+            .navigationTitle("Empleados")
+            .navigationDestination(for: Employee.self, destination: {employee in
+                DetailEmployee(employee: employee)
+                
+            })
+        }
+        .alert("Application Error", isPresented: $binding.employeesLogic.showAlert) {
+        } message: {
+            Text(vm.employeesLogic.message)
         }
     }
 }
 
 #Preview {
-    ContentView(vm: .preview)
+    ContentView().environment(GestionViewModel.preview)
 }
+
+

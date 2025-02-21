@@ -16,13 +16,17 @@ final class EmployeesLogic {
     
     var employees: [Employee]
     
+    var showAlert = false
+    var message = ""
+    
     init(persistence: PersistenceInteractor = Persistence()) {
         self.persistence = persistence
         do {
             self.employees = try persistence.loadEmpleados()
         } catch {
-            print(error)
             self.employees = []
+            message = error.localizedDescription
+            showAlert.toggle()
         }
     }
     
